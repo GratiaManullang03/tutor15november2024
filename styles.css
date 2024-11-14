@@ -1,0 +1,298 @@
+/* Improved Styles for Quiz Page */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(135deg, #1a1a2e, #16213e);
+	color: #fff;
+	overflow: hidden;
+}
+
+.quiz-container {
+	width: 90%;
+	max-width: 600px;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	animation: fadeInUp 1s ease-out;
+}
+
+h1 {
+	color: #f9b342;
+	margin-bottom: 20px;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+#question {
+	font-size: 1.2em;
+	margin: 20px 0;
+}
+
+#options button {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+	padding: 12px 20px;
+	font-size: 1em;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid #f9b342;
+	color: #f9b342;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+#options button:hover {
+	background: #f9b342;
+	color: #222;
+	box-shadow: 0 4px 8px rgba(249, 179, 66, 0.2);
+}
+
+.btn {
+	padding: 12px 30px;
+	font-size: 1em;
+	background-color: #f9b342;
+	border: none;
+	color: #222;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #eaa636;
+}
+
+#score-container {
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #f9b342;
+	margin-top: 20px;
+}
+
+/* Particle Background */
+
+body::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/demo/particles-background.jpg');
+	background-size: cover;
+	filter: blur(6px);
+	z-index: -2;
+}
+
+body::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+/* Keyframes Animation */
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Media Query for Mobile Devices */
+
+@media (max-width: 600px) {
+	.quiz-container {
+		width: 100%;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	#question {
+		font-size: 1.1em;
+	}
+
+	#options button {
+		font-size: 0.9em;
+		padding: 10px;
+	}
+
+	.btn {
+		padding: 10px 25px;
+		font-size: 0.9em;
+	}
+}
+
+/* Particle and Star Background Styling */
+#stars,
+#stars2,
+#stars3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#stars {
+	width: 1px;
+	height: 1px;
+	background: transparent;
+	box-shadow: 483px 450px #fff, 1995px 525px #fff, 755px 1459px #fff,
+		610px 1246px #fff, 764px 1850px #fff, 1274px 1697px #fff, 1227px 37px #fff,
+		1090px 506px #fff, 341px 1005px #fff, 1002px 755px #fff, 693px 1497px #fff,
+		1797px 1626px #fff, 1838px 793px #fff, 802px 881px #fff, 1117px 1983px #fff,
+		352px 1465px #fff, 1526px 852px #fff, 1559px 526px #fff, 517px 516px #fff,
+		1380px 244px #fff, 662px 1531px #fff, 1544px 518px #fff, 253px 879px #fff,
+		774px 1629px #fff, 752px 994px #fff, 1129px 726px #fff, 232px 1050px #fff,
+		1766px 290px #fff, 1976px 842px #fff, 662px 1535px #fff, 257px 1016px #fff,
+		665px 708px #fff, 1476px 1772px #fff, 261px 498px #fff, 719px 1459px #fff,
+		469px 438px #fff, 994px 474px #fff, 744px 808px #fff, 1609px 1741px #fff,
+		898px 260px #fff, 1978px 1436px #fff, 904px 1244px #fff, 123px 773px #fff,
+		6px 923px #fff, 1973px 1778px #fff, 1470px 1861px #fff, 1037px 156px #fff,
+		554px 1905px #fff, 1508px 849px #fff, 1213px 1603px #fff, 87px 1907px #fff,
+		492px 527px #fff, 91px 213px #fff, 492px 15px #fff, 1357px 1157px #fff,
+		637px 240px #fff, 1515px 281px #fff, 1757px 682px #fff, 1035px 1298px #fff,
+		1019px 1233px #fff, 25px 162px #fff, 262px 884px #fff, 1328px 965px #fff,
+		984px 879px #fff, 1213px 689px #fff, 623px 1091px #fff, 1227px 422px #fff,
+		1977px 1025px #fff, 620px 474px #fff, 528px 1525px #fff;
+	animation: animStar 50s linear infinite;
+}
+#stars:after {
+	content: ' ';
+	position: absolute;
+	top: 2000px;
+	width: 1px;
+	height: 1px;
+	background: transparent;
+	box-shadow: 483px 450px #fff, 1995px 525px #fff, 755px 1459px #fff,
+		610px 1246px #fff, 764px 1850px #fff, 1274px 1697px #fff, 1227px 37px #fff,
+		1090px 506px #fff;
+}
+
+#stars2 {
+	width: 2px;
+	height: 2px;
+	background: transparent;
+	box-shadow: 483px 450px #fff, 1995px 525px #fff, 755px 1459px #fff,
+		610px 1246px #fff, 764px 1850px #fff, 1274px 1697px #fff, 1227px 37px #fff,
+		1090px 506px #fff, 341px 1005px #fff, 1002px 755px #fff, 693px 1497px #fff,
+		1797px 1626px #fff, 1838px 793px #fff, 802px 881px #fff, 1117px 1983px #fff,
+		352px 1465px #fff, 1526px 852px #fff, 1559px 526px #fff, 517px 516px #fff,
+		1380px 244px #fff, 662px 1531px #fff, 1544px 518px #fff, 253px 879px #fff,
+		774px 1629px #fff, 752px 994px #fff, 1129px 726px #fff, 232px 1050px #fff,
+		1766px 290px #fff, 1976px 842px #fff, 662px 1535px #fff, 257px 1016px #fff,
+		665px 708px #fff, 1476px 1772px #fff, 261px 498px #fff, 719px 1459px #fff,
+		469px 438px #fff, 994px 474px #fff, 744px 808px #fff, 1609px 1741px #fff,
+		898px 260px #fff, 1978px 1436px #fff, 904px 1244px #fff, 123px 773px #fff,
+		6px 923px #fff, 1973px 1778px #fff, 1470px 1861px #fff, 1037px 156px #fff,
+		554px 1905px #fff, 1508px 849px #fff, 1213px 1603px #fff, 87px 1907px #fff,
+		492px 527px #fff, 91px 213px #fff, 492px 15px #fff, 1357px 1157px #fff,
+		637px 240px #fff, 1515px 281px #fff, 1757px 682px #fff, 1035px 1298px #fff,
+		1019px 1233px #fff, 25px 162px #fff, 262px 884px #fff, 1328px 965px #fff,
+		984px 879px #fff, 1213px 689px #fff, 623px 1091px #fff, 1227px 422px #fff,
+		1977px 1025px #fff, 620px 474px #fff, 528px 1525px #fff;
+	animation: animStar 100s linear infinite;
+}
+#stars2:after {
+	content: ' ';
+	position: absolute;
+	top: 2000px;
+	width: 2px;
+	height: 2px;
+	background: transparent;
+	box-shadow: 1585px 315px #fff, 1750px 858px #fff, 502px 1184px #fff,
+		1482px 150px #fff;
+}
+
+#stars3 {
+	width: 3px;
+	height: 3px;
+	background: transparent;
+	box-shadow: 483px 450px #fff, 1995px 525px #fff, 755px 1459px #fff,
+		610px 1246px #fff, 764px 1850px #fff, 1274px 1697px #fff, 1227px 37px #fff,
+		1090px 506px #fff, 341px 1005px #fff, 1002px 755px #fff, 693px 1497px #fff,
+		1797px 1626px #fff, 1838px 793px #fff, 802px 881px #fff, 1117px 1983px #fff,
+		352px 1465px #fff, 1526px 852px #fff, 1559px 526px #fff, 517px 516px #fff,
+		1380px 244px #fff, 662px 1531px #fff, 1544px 518px #fff, 253px 879px #fff,
+		774px 1629px #fff, 752px 994px #fff, 1129px 726px #fff, 232px 1050px #fff,
+		1766px 290px #fff, 1976px 842px #fff, 662px 1535px #fff, 257px 1016px #fff,
+		665px 708px #fff, 1476px 1772px #fff, 261px 498px #fff, 719px 1459px #fff,
+		469px 438px #fff, 994px 474px #fff, 744px 808px #fff, 1609px 1741px #fff,
+		898px 260px #fff, 1978px 1436px #fff, 904px 1244px #fff, 123px 773px #fff,
+		6px 923px #fff, 1973px 1778px #fff, 1470px 1861px #fff, 1037px 156px #fff,
+		554px 1905px #fff, 1508px 849px #fff, 1213px 1603px #fff, 87px 1907px #fff,
+		492px 527px #fff, 91px 213px #fff, 492px 15px #fff, 1357px 1157px #fff,
+		637px 240px #fff, 1515px 281px #fff, 1757px 682px #fff, 1035px 1298px #fff,
+		1019px 1233px #fff, 25px 162px #fff, 262px 884px #fff, 1328px 965px #fff,
+		984px 879px #fff, 1213px 689px #fff, 623px 1091px #fff, 1227px 422px #fff,
+		1977px 1025px #fff, 620px 474px #fff, 528px 1525px #fff;
+	animation: animStar 150s linear infinite;
+}
+#stars3:after {
+	content: ' ';
+	position: absolute;
+	top: 2000px;
+	width: 3px;
+	height: 3px;
+	background: transparent;
+	box-shadow: 91px 409px #fff, 1886px 728px #fff, 1294px 970px #fff,
+		720px 1215px #fff;
+}
+
+@keyframes animStar {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-2000px);
+	}
+}
+
+/* Keyframes for Fading Animation */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.quiz-container {
+	position: relative;
+	z-index: 1;
+}
