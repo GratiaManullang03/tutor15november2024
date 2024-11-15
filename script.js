@@ -94,6 +94,12 @@ $(document).ready(function () {
 			correctAnswer: 0,
 			difficulty: 'hard',
 		},
+        {
+			question: 'Dimana kost yose berada',
+			answers: ['Bonang', 'Jepang','Medang', 'Suka suka kau lah mik',],
+			correctAnswer: 2,
+			difficulty: '',
+		},
 	];
 
 	let currentQuestion = 0;
